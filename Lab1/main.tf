@@ -5,5 +5,5 @@ resource random_string suffix {
 }
 
 locals {
-  environment_prefix = "natesblog-dev"
+  environment_prefix = "${var.application_name}-${var.environment_name}"
 }
